@@ -1,7 +1,8 @@
 name: primitive
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# homepage: https://www.example.com
+repository: https://github.com/snowmerak/primitive
+homepage: https://snowmerak.pages.dev
 
 environment:
   sdk: '>=2.15.0 <3.0.0'
