@@ -1,6 +1,6 @@
 name: primitive
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+description: some integer and float with limited bits
+version: 1.0.1
 repository: https://github.com/snowmerak/primitive
 homepage: https://snowmerak.pages.dev
 
