@@ -1,39 +1,34 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## This
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This is slow library for limited bit integer and float.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This package have Integer and Float types with bits.
+
+I8, I16, I32, I64, I128, I256
+
+U8, U16, U32, U64, U128, U256
+
+F32, F64
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```
+dependencies:
+  primitive: ^1.8.0
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+import dart file waht you want type's name.
 
 ```dart
-const like = 'sample';
+var i8 = I8(0);
+
+var f32 = F32(3.14);
+
+var U64 = U64(BigInt.from(99));
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+U64, U128, U256, I128, I256 are using BigInt class.
