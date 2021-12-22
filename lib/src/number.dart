@@ -129,3 +129,40 @@ abstract class BigInteger {
 
   BigInteger abs();
 }
+
+abstract class Float {
+  ByteData data = ByteData(0);
+
+  Float(double value);
+
+  double get value;
+
+  Float operator +(Float other);
+
+  Float operator -(Float other);
+
+  Float operator -();
+
+  Float operator *(Float other);
+
+  Float operator /(Float other);
+
+  Float operator %(Float other);
+
+  bool operator <(Float other);
+
+  bool operator <=(Float other);
+
+  bool operator >(Float other);
+
+  bool operator >=(Float other);
+
+  Float pow(Float exponent);
+
+  @override
+  String toString() {
+    return '$value';
+  }
+
+  Float abs();
+}
