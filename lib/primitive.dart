@@ -12,5 +12,8 @@ export 'src/u16.dart';
 export 'src/u32.dart';
 export 'src/u64.dart';
 
+export 'src/f32.dart';
+export 'src/f64.dart';
+
 
 // TODO: Export any libraries intended for clients of this package.
