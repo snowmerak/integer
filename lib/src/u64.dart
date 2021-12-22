@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 import 'package:primitive/src/number.dart';
 
 class U64 extends BigInteger {
