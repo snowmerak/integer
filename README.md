@@ -16,7 +16,7 @@ F32, F64
 
 ```
 dependencies:
-  primitive: ^1.8.0
+  primitive: ^1.0.0
 ```
 
 ## Usage
