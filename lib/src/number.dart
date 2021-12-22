@@ -45,7 +45,7 @@ abstract class Integer {
 
   @override
   String toString() {
-    return '0';
+    return '$value';
   }
 
   Integer rotateLeft(int shiftAmount);
@@ -120,7 +120,7 @@ abstract class BigInteger {
 
   @override
   String toString() {
-    return '0';
+    return '$value';
   }
 
   BigInteger rotateLeft(int shiftAmount);
