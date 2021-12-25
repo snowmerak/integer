@@ -21,6 +21,13 @@ void main() {
   print(i64.value);
   print(i64.data.buffer.asUint8List());
 
+  i64 = I64(-2045982837123);
+  print(i64);
+  var buf = i64.toBytes();
+  print(buf);
+  var newI64 = I64.fromBytes(buf);
+  print(newI64);
+
   print(U8(100) + U8(200));
   print(U16(35345) + U16(56767));
   print(U32(23423442) + U32(345645345));
@@ -31,7 +38,7 @@ void main() {
   print(F64(34.23) * F64(23.78));
 
   var u64 = U64(342342);
-  var buf = u64.toBytes();
+  buf = u64.toBytes();
   print(buf);
   print(U64.fromBytes(buf));
 }
