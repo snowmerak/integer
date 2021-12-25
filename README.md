@@ -6,9 +6,9 @@ This is slow library for limited bit integer and float.
 
 This package have Integer and Float types with bits.
 
-I8, I16, I32, I64, I128, I256
+I8, I16, I32, I64
 
-U8, U16, U32, U64, U128, U256
+U8, U16, U32, U64
 
 F32, F64
 
@@ -31,4 +31,4 @@ var f32 = F32(3.14);
 var U64 = U64(BigInt.from(99));
 ```
 
-U64, U128, U256, I128, I256 are using BigInt class.
+U64 is using BigInt class.
