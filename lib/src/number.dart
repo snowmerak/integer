@@ -80,7 +80,11 @@ abstract class BigInteger {
       "115792089237316195423570985008687907853269984665640564039457584007913129639936",
       radix: 10);
 
-  BigInteger(BigInt init);
+  BigInteger(int init);
+
+  BigInteger.from(BigInt init);
+
+  BigInteger.fromBytes(Uint8List bytes);
 
   BigInteger operator +(BigInteger other);
 
@@ -128,6 +132,8 @@ abstract class BigInteger {
   BigInteger rotateRight(int shiftAmount);
 
   BigInteger abs();
+
+  Uint8List toBytes();
 }
 
 abstract class Float {
