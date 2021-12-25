@@ -1,6 +1,6 @@
 name: primitive
 description: some integer and float with limited bits
-version: 2.1.0
+version: 2.2.0
 repository: https://github.com/snowmerak/primitive
 homepage: https://snowmerak.pages.dev
 
