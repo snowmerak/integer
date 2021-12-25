@@ -8,6 +8,10 @@ class I64 extends Integer {
     data.setInt64(0, value, Endian.little);
   }
 
+  I64.fromBytes(Uint8List bytes) : super.fromBytes(bytes) {
+    data = ByteData.view(bytes.buffer, 0, 8);
+  }
+
   @override
   I64 operator %(Integer other) {
     return I64(value % other.value);

@@ -5,6 +5,8 @@ abstract class Integer {
 
   Integer(int value);
 
+  Integer.fromBytes(Uint8List bytes);
+
   int get value;
 
   Integer operator +(Integer other);
@@ -53,6 +55,10 @@ abstract class Integer {
   Integer rotateRight(int shiftAmount);
 
   Integer abs();
+
+  Uint8List toBytes() {
+    return data.buffer.asUint8List();
+  }
 }
 
 abstract class BigInteger {

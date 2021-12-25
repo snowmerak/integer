@@ -8,6 +8,11 @@ class I8 extends Integer {
     data.setInt8(0, value);
   }
 
+  I8.fromBytes(Uint8List bytes) : super.fromBytes(bytes) {
+    data = ByteData(1);
+    data.setInt8(0, bytes[0]);
+  }
+
   @override
   I8 operator %(Integer other) {
     return I8(value % other.value);

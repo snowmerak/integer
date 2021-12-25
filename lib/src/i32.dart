@@ -8,6 +8,10 @@ class I32 extends Integer {
     data.setInt32(0, value, Endian.little);
   }
 
+  I32.fromBytes(Uint8List bytes) : super.fromBytes(bytes) {
+    data = ByteData.view(bytes.buffer, 0, 4);
+  }
+
   @override
   I32 operator %(Integer other) {
     return I32(data.getInt32(0, Endian.little) %

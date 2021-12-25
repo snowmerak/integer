@@ -8,6 +8,10 @@ class U32 extends Integer {
     data.setInt32(0, value, Endian.little);
   }
 
+  U32.fromBytes(Uint8List bytes) : super.fromBytes(bytes) {
+    data = ByteData.view(bytes.buffer, 0, 4);
+  }
+
   @override
   U32 operator %(Integer other) {
     return U32(data.getInt32(0, Endian.little) %

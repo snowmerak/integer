@@ -8,6 +8,10 @@ class U16 extends Integer {
     data.setInt16(0, value, Endian.little);
   }
 
+  U16.fromBytes(Uint8List bytes) : super.fromBytes(bytes) {
+    data = ByteData.view(bytes.buffer, 0, 2);
+  }
+
   @override
   U16 operator %(Integer other) {
     return U16(value % other.value);
