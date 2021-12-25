@@ -11,3 +11,7 @@
 - Disable 128bit, 256bit integer
 - Change U64 constructor
 - Add bytes buffer converting to U64
+
+## 2.2.0
+
+- Add bytes buffer converting to Integer
