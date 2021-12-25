@@ -5,7 +5,7 @@ import 'package:primitive/src/number.dart';
 class F32 extends Float {
   F32(double value) : super(value) {
     data = ByteData(4);
-    data.setFloat32(0, value);
+    data.setFloat32(0, value, Endian.little);
   }
 
   @override
@@ -73,5 +73,5 @@ class F32 extends Float {
   }
 
   @override
-  double get value => data.getFloat32(0);
+  double get value => data.getFloat32(0, Endian.little);
 }

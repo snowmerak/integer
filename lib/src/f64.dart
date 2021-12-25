@@ -5,7 +5,7 @@ import 'package:primitive/src/number.dart';
 class F64 extends Float {
   F64(double value) : super(value) {
     data = ByteData(8);
-    data.setFloat64(0, value);
+    data.setFloat64(0, value, Endian.little);
   }
 
   @override
@@ -73,5 +73,5 @@ class F64 extends Float {
   }
 
   @override
-  double get value => data.getFloat64(0);
+  double get value => data.getFloat64(0, Endian.little);
 }
